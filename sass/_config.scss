@@ -1,0 +1,54 @@
+/* CSS RESETS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// Sass Variables
+$colors: ( "pri": red, "sec": green, "ter": rgb(48, 163, 230), "wit": white, "blk": black, );
+@function clr($col) {
+    @return map-get($colors, $col);
+}
+
+// SASS MAPS like Utility Classes
+$font-sizes: ( "d3": 3rem, "d2": 2rem, "d1": 1rem, );
+//Functions in Sass
+@function fsz($fz) {
+    @return map-get($font-sizes, $fz);
+}
+
+//Mixin in Sass
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//Mixin in Sass
+@mixin transition-ease {
+    transition: all 0.5s ease-out;
+}
+
+//Responsive
+$size_md: 768px;
+$size_lg: 1024px;
+$size_xl: 1440px;
+@mixin responsive($size) {
+    @if ($size==$size_md) {
+        @media (min-width: $size) {
+            @content;
+        }
+    }
+    @else if ($size==$size_lg) {
+        @media (min-width: $size) {
+            @content;
+        }
+    }
+    @else {
+        @media (min-width: $size) {
+            @content;
+        }
+    }
+}

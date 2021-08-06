@@ -1,0 +1,206 @@
+//MEDIUM DEVICES
+@include responsive(768px) {
+    .menu-btn {
+        visibility: hidden;
+    }
+    .nav {
+        visibility: hidden;
+        z-index: -999;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .menu-nav {
+            width: unset;
+            max-width: unset;
+            margin-left: unset;
+            background-color: brown;
+            padding: 0rem 2rem;
+            visibility: visible;
+            border-radius: 15px;
+            display: block;
+            transform: translateY(0px);
+            height: 7%;
+            &__item {
+                display: inline;
+                padding-right: 0.5rem;
+            }
+            &__link {
+                font-size: 1.2rem;
+                color: gold;
+                font-weight: bold;
+            }
+        }
+    }
+    .home {
+        &-left {
+            grid-column: 1/3;
+        }
+        &-right {
+            &-img {
+                height: 300px;
+                opacity: 1;
+            }
+        }
+    }
+    .projects {
+        &-items {
+            margin: 3rem;
+            .projects-item {
+                height: 400px;
+                img {
+                    width: 100%;
+                    height: 88%;
+                }
+                .projects-btns {
+                    align-items: center;
+                    .projects-btn {
+                        font-size: 1.4rem;
+                        padding: 0.6rem;
+                    }
+                }
+            }
+        }
+    }
+    .about {
+        margin: 6rem auto;
+        .jobs {
+            margin: 3rem;
+            .job {
+                max-width: 650px;
+                margin: 1.5rem auto;
+            }
+        }
+    }
+    .contact {
+        // &-heading {
+        //     margin: 2rem 0;
+        //     margin-left: auto;
+        // }
+        &-list {
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1rem;
+            &-item {
+                margin-bottom: 4rem;
+                font-size: 1.4rem;
+                background-color: rgba(black, 0.3);
+                padding: 1rem;
+                border-radius: 10px;
+                &:hover {
+                    background-color: rgba(black, 1);
+                }
+            }
+        }
+    }
+    .home-button-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: none;
+        width: auto;
+        left: 0;
+    }
+}
+
+@include responsive(1024px) {
+    .menu-nav {
+        .menu-nav__link {
+            font-size: 1.3rem;
+        }
+    }
+    .home {
+        margin-top: 10rem;
+        &-left {
+            margin-left: 4rem;
+            grid-column: 1/3;
+            font-size: 1.5rem;
+        }
+        &-right {
+            &-img {
+                width: 300px;
+                height: 350px;
+            }
+        }
+    }
+    .projects {
+        &-items {
+            margin: 4rem;
+        }
+    }
+    .about {
+        margin: 10rem auto;
+        .jobs {
+            margin: 4rem;
+            .job {
+                max-width: 750px;
+                margin: 2rem auto;
+            }
+        }
+    }
+    .home-button-wrapper {
+        a {
+            padding: 0.4rem;
+            .image {
+                margin: 0.2.4rem;
+                height: 2.4rem;
+                width: 2.8rem;
+            }
+        }
+    }
+    .contact {
+        background-size: contain;
+    }
+}
+
+@include responsive(1440px) {
+    .menu-nav {
+        .menu-nav__link {
+            font-size: 1.4rem;
+        }
+    }
+    .home {
+        max-width: 1440px;
+        margin: 2rem auto;
+        margin-top: 12rem;
+        &-left {
+            &-intro {
+                font-size: 2.5rem;
+                line-height: 3.2rem;
+            }
+            &-description {
+                font-size: 1.4rem;
+                line-height: 2.2rem;
+                margin: 1.5rem;
+                margin-bottom: 2rem;
+                &::first-letter {
+                    padding-left: 10rem;
+                    font-size: 4rem;
+                }
+            }
+        }
+        &-right {
+            &-img {
+                width: 350px;
+                height: 400px;
+            }
+        }
+    }
+    .projects {
+        max-width: 1440px;
+        margin: 2rem auto;
+        &-items {
+            margin: 4rem;
+        }
+    }
+    .about {
+        max-width: 1440px;
+        margin: 2rem auto;
+        margin: 10rem auto;
+        .jobs {
+            margin: 4rem;
+            .job {
+                max-width: 1080px;
+                margin: 3rem auto;
+            }
+        }
+    }
+}
