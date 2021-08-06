@@ -8,14 +8,17 @@
     background: linear-gradient(60deg, rgba(grey, 0.1), rgba(brown, 0.8)), url("../img/currentSun.jpg") center;
     background-size: cover;
     background-blend-mode: color-burn;
+    &-heading {
+        font-size: 1.2rem;
+    }
     &-list {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 1rem;
         line-height: 2;
         &-item {
-            margin-bottom: 2rem;
-            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
             background-color: rgba(black, 0.3);
             padding: 1rem;
             border-radius: 10px;

@@ -348,6 +348,9 @@ header {
   background-size: cover;
   background-blend-mode: color-burn;
 }
+.contact-heading {
+  font-size: 1.2rem;
+}
 .contact-list {
   display: grid;
   grid-template-columns: 1fr;
@@ -355,8 +358,8 @@ header {
   line-height: 2;
 }
 .contact-list-item {
-  margin-bottom: 2rem;
-  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
   background-color: rgba(0, 0, 0, 0.3);
   padding: 1rem;
   border-radius: 10px;
@@ -386,8 +389,10 @@ header {
   position: relative;
   transition: all 0.5s ease-out;
   margin: 1rem;
+  max-width: 450px;
   border-bottom: 5px solid gold;
   background-color: #333333;
+  height: 350px;
 }
 .projects-items .projects-item::after {
   content: "";
@@ -401,7 +406,6 @@ header {
   transition: all 0.5s ease-out;
 }
 .projects-items .projects-item img {
-  z-index: -1;
   width: 100%;
   height: 80%;
 }
@@ -410,10 +414,12 @@ header {
   bottom: 0%;
   height: auto;
   width: 100%;
+  padding: 1rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: bottom;
   text-align: center;
+  background-color: black;
 }
 .projects-items .projects-item .projects-btns .projects-btn {
   font-size: 1.2rem;
@@ -430,9 +436,8 @@ header {
   height: 100%;
 }
 .projects-items .projects-item:hover .projects-btns {
-  bottom: 48%;
+  bottom: 45%;
   z-index: 1;
-  background-color: black;
 }
 .projects-items .projects-item:hover img {
   height: 100%;
@@ -565,11 +570,15 @@ header {
     height: 88%;
   }
   .projects-items .projects-item .projects-btns {
+    padding: unset;
     align-items: center;
   }
   .projects-items .projects-item .projects-btns .projects-btn {
     font-size: 1.4rem;
     padding: 0.6rem;
+  }
+  .projects-items .projects-item:hover img {
+    height: 100%;
   }
 
   .about {
@@ -583,12 +592,15 @@ header {
     margin: 1.5rem auto;
   }
 
+  .contact-heading {
+    font-size: 1.6rem;
+  }
   .contact-list {
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
   }
   .contact-list-item {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     font-size: 1.4rem;
     background-color: rgba(0, 0, 0, 0.3);
     padding: 1rem;

@@ -10,8 +10,10 @@
             position: relative;
             @include transition-ease;
             margin: 1rem;
+            max-width: 450px;
             border-bottom: 5px solid gold;
             background-color: lighten(clr("blk"), 20%);
+            height: 350px;
             &::after {
                 content: "";
                 position: absolute;
@@ -25,7 +27,6 @@
                 @include transition-ease;
             }
             img {
-                z-index: -1;
                 width: 100%;
                 height: 80%;
             }
@@ -34,10 +35,12 @@
                 bottom: 0%;
                 height: auto;
                 width: 100%;
+                padding: 1rem;
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 align-items: bottom;
                 text-align: center;
+                background-color: black;
                 .projects-btn {
                     font-size: 1.2rem;
                     color: white;
@@ -55,9 +58,8 @@
             }
             &:hover {
                 .projects-btns {
-                    bottom: 48%;
+                    bottom: 45%;
                     z-index: 1;
-                    background-color: black;
                 }
                 img {
                     height: 100%;
