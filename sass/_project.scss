@@ -3,7 +3,7 @@
     &-items {
         margin: 1rem;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+        grid-template-columns: repeat(auto-fit, minmax(400px, auto));
         grid-gap: 1rem;
         place-items: center;
         .projects-item {
@@ -13,7 +13,7 @@
             max-width: 450px;
             border-bottom: 5px solid gold;
             background-color: lighten(clr("blk"), 20%);
-            height: 350px;
+            height: 400px;
             &::after {
                 content: "";
                 position: absolute;

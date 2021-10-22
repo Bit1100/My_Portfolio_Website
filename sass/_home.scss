@@ -83,14 +83,13 @@
         padding: 0.4rem 0.6rem;
         .image {
             z-index: 10;
-            height: 2rem;
-            width: 2rem;
-            border: 2px solid gold;
-            background-color: lightGold;
+            height: 1.5rem;
+            width: 1.5rem;
             transform: scale(1);
             @include transition-ease();
+            border-radius: 50%;
             &:hover {
-                transform: scale(1.2);
+                transform: scale(1.1);
             }
         }
     }

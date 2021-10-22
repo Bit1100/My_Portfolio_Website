@@ -144,14 +144,14 @@ header {
 }
 .home-button-wrapper a .image {
   z-index: 10;
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 2rem;
+  width: 2rem;
+  background-color: lightGold;
   transform: scale(1);
   transition: all 0.5s ease-out;
-  border-radius: 50%;
 }
 .home-button-wrapper a .image:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 @keyframes scaleup {
@@ -380,7 +380,7 @@ header {
 .projects-items {
   margin: 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
   grid-gap: 1rem;
   place-items: center;
 }
@@ -391,7 +391,7 @@ header {
   max-width: 450px;
   border-bottom: 5px solid gold;
   background-color: #333333;
-  height: 400px;
+  height: 350px;
 }
 .projects-items .projects-item::after {
   content: "";
